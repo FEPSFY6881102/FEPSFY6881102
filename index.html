@@ -177,39 +177,34 @@
    <title>My Daily Activities</title>
    <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
   <div id=”chart_div”></div>
-   <script type="text/javascript">
-  // Load the Visualization API and the corechart package.
-  google.charts.load('current', { packages: ['corechart'] });
-// Set a callback to run when the Google Visualization API is loaded.
-  google.charts.setOnLoadCallback(drawChart);
- // Callback function to create and populate the data table, then draw the chart.
-  function drawChart() {
-    // Create the data table.
-    var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
-      ['Work', 8],
-      ['Eat', 2],
-      ['Commute', 2],
-      ['Watch TV', 4],
-      ['Sleep', 8]
-    ]);
+    <script type="text/javascript">
+    function drawChart() {
+     var data =  google.visulisation.arrayToDataTable([
+      ['Task','Hours per Day'],
+      ['Work',8],
+      ['Sleep',8],
+      ['Eat',2],
+      ['Study',4],
+      ['Exercise',2]
+      ]);
 
-    // Set chart options
-    var options = {
-      title: 'My Daily Activities',
-      is3D: true, // Change to false for a flat pie chart
-      pieHole: 0.4 // For a donut chart, uncomment this line and set a value
-    };
+     var options = {
+      title='My Daily Activities'
+     };
 
-    // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-</script>
+     var chart = new google.visulisation.PieChart(document.getElementById('chart_div'));
+     chart.draw(data,options);
+
+    }
+    </script>
 
 
 
+
+    
+  
 <script type="text/javascript">
+ 
  function drawChart() {
   var data = new google.visualization.DataTable();
   data.addColumn('number', 'Age');
@@ -234,6 +229,10 @@
  }
 </script>
 
+
+
+
+     
 
    
 
